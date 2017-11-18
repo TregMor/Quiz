@@ -83,12 +83,12 @@ function showScores(){
 
 //Description of the quiz questions: {question,choices,answer}
 var questions = [
-    new Question("Quelle est la capitale de la Russie?",["Kiev", "Vladivostok","St Petersbourg","Moscou"], "Moscou"),
-    new Question("Quel pays n'a pas de frontière avec la Russie?",["Mongolie", "Lituanie","Azerbaïdjan","Corée du Sud"], "Corée du Sud"),
-    new Question("Quelle couleur n'appartient pas au drapeau de la Russie?",["Jaune", "Blanc","Rouge","Bleu"], "Jaune"),
-    new Question("Le Soukhoï est un avion?",["De chasse", "D'attaque","Bombardier","De surveillance"], "D'attaque"),
-    new Question("Quelle est la monnaie de la Russie?",["Le mark", "Le rouble","La roupie","le drachme"], "Le rouble"),
-    new Question("Le Commissariat du peuple aux Affaires intérieures était?",["le KGB","le PCUS","le NKVD","le CPAI"],"le NKVD")
+    new Question("Quel mode de reproduction ne correspond à aucun reptile ?",["Ovipare", "Vivipare","Ovovipare","Ovovivipare"], "Vivipare"),
+    new Question("Quel pays n'a pas de frontière avec la Russie ?",["Mongolie", "Lituanie","Azerbaïdjan","Corée du Sud"], "Corée du Sud"),
+    new Question("Quel pays n'est pas traversé par le Danube?",["Autriche", "Slovenie","Allemagne","Bulgarie"], "Slovenie"),
+    new Question("Quel est l'équivalent grec de Jupiter ?",["Cronos", "Poseidon","Zeus","Hades"], "Zeus"),
+    new Question("Quels animaux sont étudiés par les ichtyologues ?",["Les poissons", "Les oiseaux","Les reptiles","les insectes"], "Les poissons"),
+    new Question("Comment se prénommait le frère de Vincent Van Gogh ?",["Léo","Hugo","Théo","Timo"],"Théo")
 ];
 
 var quiz = new Quiz(questions);

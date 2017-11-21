@@ -1,5 +1,5 @@
 body {
-    background-color: #eeeeee;
+    background-color: #dffed2;
 }
 .grid {
     width:600px;
@@ -8,40 +8,55 @@ body {
     background-color: #ffffff;
     padding:10px 50px 50px 50px;
     border-radius: 30px;
-    border:2px solid #cbcbcb;
+    border:2px solid #7aa83d;
     box-shadow: -10px 10px 5px #cbcbcb;
 }
 h1 {
     font-family: sans-serif;
-    background-color: #57636e;
+    background-color: #7aa83d;
     font-size: 60px;
     text-align: center;
     color:  #ffffff;
     padding:2px 0px;
     border-radius: 20px;
 }
+h3{
+    position: relative;
+    top: 50px;
+}
 #question{
     font-family: sans-serif;
     font-size: 30px;
     text-align: center;
-    color: #5a6772;
+    color: #8fc648;
 }
 .buttons{
     margin-top: 30px;
 }
 #btn0,#btn1,#btn2,#btn3{
-    background-color: #778897;
+    background-color: #8fc648;
     width:250px;
     font-size:25px;
-    color:#ffffff ;
-    border:1px solid #1d3c6a;
+    color:#ffffff;
+    border:1px solid #7aa83d;
+    border-radius: 15px;
+    margin: 10px 40px 10px 0;
+    padding:10px 10px;
+}
+#btnTry{
+    background-color: #dffed2;
+    width:150px;
+    font-size:20px;
+    font-weight:bold;
+    color:#8fc648;
+    border:1px solid #7aa83d;
     border-radius: 15px;
     margin: 10px 40px 10px 0;
     padding:10px 10px;
 }
 #btn0:hover,#btn1:hover,#btn2:hover,#btn3:hover{
-    cursor: auto;
-    background-color: #57636e;
+    cursor: pointer;
+    background-color: #7aa83d;
 }
 #progress{
     color: #2b2b2b;
@@ -56,8 +71,9 @@ h1 {
     font-family: sans-serif;
 }
 #com{
-    color: #079697;
+    color: #7aa83d;
     text-align: center;
     font-size: 25px;
     font-family: sans-serif;
+    font-weight: bold;
 }

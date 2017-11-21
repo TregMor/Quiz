@@ -1,17 +1,15 @@
-//Question's constructor
+//----Question's constructor----//
 function Question(text,choices,answer) {
     this.text=text;
     this.choices=choices;
     this.answer=answer;
 }
     //Definition of correct answer method
-Question.prototype.correctAnswer = function (choice){
-    return choice === this.answer;
-};
+    Question.prototype.correctAnswer = function (choice){
+        return choice === this.answer;
+    };
 
-//----Controller----//
-
-//Quiz constructor
+//----Quiz constructor----//
 function Quiz(questions){
     this.score = 0;
     this.questions = questions;
@@ -21,7 +19,7 @@ function Quiz(questions){
     Quiz.prototype.getQuestionIndex = function(){
         return this.questions[this.questionIndex];
     };
-    //Method for conditions that end of the quiz
+    //Method for conditions that end the quiz
     Quiz.prototype.isEnded = function () {
         return this.questions.length === this.questionIndex;
     };
@@ -34,7 +32,7 @@ function Quiz(questions){
     };
 
 //----Application script----//
-//Method for running the quiz
+//Methods for running the quiz
 function edit(){
     if (quiz.isEnded()){
         showScores ();
@@ -54,7 +52,6 @@ function edit(){
         showProgress();
     }
 }
-
 function play(id,guess){
     var button = document.getElementById(id);
     button.onclick = function(){
@@ -68,17 +65,24 @@ function showProgress(){
     element.innerHTML = "Question " + currentQuestionNb + " of " + quiz.questions.length;
 }
 function showScores(){
-    var quizEnded = "<h1>Result</h1>";
+    var result = "<h1>Result</h1>";
     var element = document.getElementById("quiz");
-    quizEnded += "<h2 id='score'>Your score is " + quiz.score + "</h2>"
+    result += "<h2 id='score'>Your score is " + quiz.score + "</h2>"
 
-    var failed = "<h3 id='com'>Try Again !!</h3>";
+    var failed = "<h3 id='com'><button id='btnTry'> Try Again !!</button></h3>";
     var success = "<h3 id='com'>Congratulations !!</h3>";
     if(quiz.score < quiz.questions.length){
-        element.innerHTML = quizEnded + failed;
+        element.innerHTML = result + failed;
+        tryAgain();
     }else{
-        element.innerHTML = quizEnded + success;
+        element.innerHTML = result + success;
     }
+}
+function tryAgain(){
+    var restart = document.getElementById("btnTry");
+    restart.onclick = function(){
+        location.reload();
+    };
 }
 
 //Description of the quiz questions: {question,choices,answer}

@@ -71,9 +71,15 @@ h3{
     font-family: sans-serif;
 }
 #com{
-    color: #7aa83d;
+    color: #e74c3c;
     text-align: center;
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
+}
+video{
+    height: 150px;
+    position: relative;
+    top: 50px;
+    left: 195px;
 }
